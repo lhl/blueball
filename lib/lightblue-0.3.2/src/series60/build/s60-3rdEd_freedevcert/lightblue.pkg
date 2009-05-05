@@ -1,0 +1,21 @@
+&EN
+
+; LightBlue v 0.3.2 (UID for 3rd Edition)
+#{"LightBlue"}, (0xA000211E), 0, 3, 2, TYPE=SA
+
+%{"Vendor-EN"}
+:"Vendor"
+
+; Supports Series 60 3rd Edition
+[0x101F7961], 0, 0, 0, {"S60ProductID"}
+
+; Python sources
+"..\..\src\__init__.py" - "!:\resource\lightblue\__init__.py"
+"..\..\src\_lightblue.py" - "!:\resource\lightblue\_lightblue.py"
+"..\..\src\obex.py" - "!:\resource\lightblue\obex.py"
+"..\..\src\_obex.py" - "!:\resource\lightblue\_obex.py"
+"..\..\src\_lightbluecommon.py" - "!:\resource\lightblue\_lightbluecommon.py"
+"..\..\src\_obexcommon.py" - "!:\resource\lightblue\_obexcommon.py"
+
+; Extensions
+"_lightblueutil.pyd" - "!:\sys\bin\_lightblueutil.pyd"

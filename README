@@ -1,0 +1,66 @@
+Licensed under GPLv3
+
+
+====
+
+
+A & B running at the same time
+C running 20s behind
+
+Deployment
+===
+
+A
+---
+* Front entrance
+* Also where viz is running
+* Setup first, get IP
+
+Sensor B
+---
+* Side entrance
+
+Sensor C
+---
+* On side stage
+
+Login to DB on A, allow access from B/C IPs
+Login to B & C, modify cronjobs w/ appropriate hostname
+
+
+
+Setup
+===
+
+A
+---
+x ADC
+x MacPorts 
+  x PATH
+  x MySQL Server
+x MySQLdb
+x lightblue
+x Nodebox
+x Nodebox Library
+x crontab
+  x Detector
+  x IP
+x SSH On
+x Energy Saver Off
+x SSaver Off
+
+B & C
+---
+xx Software Updates
+xx ADC
+xx svn co
+xx MacPorts 
+  xx PATH
+  xx MySQL client
+xx MySQLdb
+xx lightblue
+xx crontab
+  xx Detector
+  xx IP
+xx SSH On
+xx Energy Saver Off

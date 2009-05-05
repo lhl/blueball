@@ -1,0 +1,19 @@
+; LightBlue v 0.3.2
+#{"LightBlue"}, (0x200031CC), 0, 3, 2
+
+; UID for this Series 60 edition
+(0x101f7960), 0, 0, 0, {"Series60ProductID"}
+
+;;; Python for Series 60
+(0x10201510), 0, 0, 0, {"Python"}
+
+; Python sources
+"..\..\src\__init__.py" - "!:\system\libs\lightblue\__init__.py"
+"..\..\src\_lightblue.py" - "!:\system\libs\lightblue\_lightblue.py"
+"..\..\src\obex.py" - "!:\system\libs\lightblue\obex.py"
+"..\..\src\_obex.py" - "!:\system\libs\lightblue\_obex.py"
+"..\..\src\_lightbluecommon.py" - "!:\system\libs\lightblue\_lightbluecommon.py"
+"..\..\src\_obexcommon.py" - "!:\system\libs\lightblue\_obexcommon.py"
+
+; Extensions
+"_lightblueutil.pyd" - "!:\system\libs\lightblue\_lightblueutil.pyd"

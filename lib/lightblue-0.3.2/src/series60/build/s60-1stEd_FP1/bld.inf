@@ -1,0 +1,10 @@
+
+PRJ_PLATFORMS
+#ifdef EKA2
+gcce winscw
+#else
+wins armi 
+#endif
+
+PRJ_MMPFILES
+_lightblueutil.mmp

@@ -1,0 +1,39 @@
+TARGETTYPE	dll
+TARGET		_lightblueutil.pyd
+TARGETPATH	\system\libs
+
+#ifdef EKA2
+CAPABILITY  NetworkServices LocalServices ReadUserData WriteUserData Location UserEnvironment PowerMgmt ProtServ SwEvent SurroundingsDD ReadDeviceData WriteDeviceData TrustedUI
+#endif
+
+NOSTRICTDEF
+EXPORTUNFROZEN
+
+SYSTEMINCLUDE 	\epoc32\include
+SYSTEMINCLUDE 	\epoc32\include\libc
+SYSTEMINCLUDE 	\epoc32\include\python
+
+USERINCLUDE   	..\..\src\_lightblueutil
+
+LIBRARY 	python222.lib
+LIBRARY 	euser.lib
+LIBRARY     estlib.lib
+LIBRARY     btextnotifiers.lib
+
+LIBRARY	esock.lib bluetooth.lib btdevice.lib
+
+
+SOURCEPATH  ..\..\src\_lightblueutil
+SOURCE      apnresolver.cpp
+
+SOURCEPATH  ..\..\src\_lightblueutil
+SOURCE      localepocpyutils.cpp
+
+SOURCEPATH  ..\..\src\_lightblueutil
+SOURCE      panic.cpp
+
+SOURCEPATH  ..\..\src\_lightblueutil
+SOURCE      _lightblueutil.cpp
+
+
+macro __SYMBIAN_9__

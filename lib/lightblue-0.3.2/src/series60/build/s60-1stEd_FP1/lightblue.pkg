@@ -1,0 +1,18 @@
+; LightBlue v 0.2.0
+#{"LightBlue"}, (0x200031CC), 0, 2, 0
+
+; Supports Series 60 1st Edition
+(0x101f8202), 0, 0, 0, {"Series60ProductID"}
+
+;;; Python for Series 60
+(0x10201510), 0, 0, 0, {"Python"}
+
+; Python sources for all distributions
+"..\..\src\__init__.py" - "!:\system\libs\lightblue\__init__.py"
+"..\..\src\_lightblue.py" - "!:\system\libs\lightblue\_lightblue.py"
+"..\..\src\obex.py" - "!:\system\libs\lightblue\obex.py"
+"..\..\src\_obex.py" - "!:\system\libs\lightblue\_obex.py"
+"..\..\src\_lightbluecommon.py" - "!:\system\libs\lightblue\_lightbluecommon.py"
+
+; Specific builds for this distribution
+"_lightblueutil.pyd" - "!:\system\libs\lightblue\_lightblueutil.pyd"
